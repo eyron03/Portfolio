@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Sun, Moon, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -21,7 +22,7 @@ export default function Navbar() {
   }, [theme]);
 
   return (
-    <nav className="w-full p-4 bg-white dark:bg-gray-900 shadow-md fixed top-0 left-0 z-50">
+    <nav className="w-full p-4 bg-white dark:bg-gray-900 shadow-md fixed top-0 left-0 z-50 flex justify-items-center text-center">
       <div className="container mx-auto flex justify-between items-center">
 
         {/* Mobile Menu Button */}
@@ -29,19 +30,19 @@ export default function Navbar() {
           <Button
             onClick={() => setMenuOpen(!menuOpen)}
             variant="ghost"
-            className="hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md transition-all"
+            className="hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md transition-all flex items-center justify-center"
           >
             <Menu className="w-6 h-6 text-gray-800 dark:text-gray-300" />
           </Button>
         </div>
 
         {/* Logo */}
-        <a href="#" className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-500 transition-all">
+        <a href="#" className="text-lg font-bold text-gray-900 dark:text-white hover:text-blue-500 transition-all">
           Portfolio
         </a>
 
         {/* Navigation Links */}
-        <div className={`md:flex space-x-6 ${menuOpen ? "block" : "hidden"} absolute md:static top-16 left-0 w-full bg-white dark:bg-gray-900 md:w-auto md:bg-transparent md:dark:bg-transparent p-4 md:p-0 shadow-md md:shadow-none`}>
+        <div className={`md:flex space-x-6 ${menuOpen ? "block" : "hidden"} flex items-baseline justify-center gap-2 md:flex-row absolute md:static top-16 left-0 w-full bg-white dark:bg-gray-900 md:w-auto md:bg-transparent md:dark:bg-transparent p-2 md:p-0 shadow-md md:shadow-none`}>
           {["About", "Projects", "Contact"].map((item, index) => (
             <a
               key={index}

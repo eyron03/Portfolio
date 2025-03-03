@@ -5,10 +5,10 @@ export default function Footer() {
     <footer className="w-full bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-6 mt-auto">
       <div className="container mx-auto px-6 flex justify-center space-x-6">
         {[
-          { icon: <Github />, link: "https://github.com/" },
-          { icon: <Linkedin />, link: "https://linkedin.com/" },
+          { icon: <Github />, link: "https://github.com/eyron03" },
+          { icon: <Linkedin />, link: "#" },
           { icon: <Twitter />, link: "https://twitter.com/" },
-          { icon: <Facebook />, link: "https://facebook.com/" },
+          { icon: <Facebook />, link: "https://www.facebook.com/eyron.arenas/" },
         ].map((social, index) => (
           <a
             key={index}
@@ -24,7 +24,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="text-center text-sm text-gray-600 dark:text-gray-400 mt-4">
-        © {new Date().getFullYear()} Your Name. All rights reserved.
+        © {new Date().getFullYear()} Aaron Christian Arenas. All rights reserved.
       </div>
     </footer>
   );

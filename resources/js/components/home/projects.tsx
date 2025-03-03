@@ -3,22 +3,22 @@ import { Code, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Project One",
-    description: "A modern web application built with React and Tailwind CSS.",
-    github: "https://github.com/yourgithub/project-one",
-    live: "https://yourproject.com",
+    title: "StoryHub",
+    description: "A web application built with Laravel Blade and Tailwind CSS.",
+    github: "https://github.com/eyron03/StoryHub",
+    live: "https://storyhub-main-vxhes0.laravel.cloud",
   },
   {
-    title: "Project Two",
-    description: "A full-stack app using Next.js and Firebase.",
-    github: "https://github.com/yourgithub/project-two",
-    live: "https://yourproject.com",
+    title: "Learning Managment Sytem (LMS)",
+    description: "A full-stack app using Next.js, Shadcn UI and Prisma ORM. (Currently in development)",
+    github: "https://github.com/eyron03/learning-management-system",
+    live: "https://learning-management-system-eight.vercel.app",
   },
   {
     title: "Project Three",
-    description: "An AI-powered chatbot with a sleek UI.",
-    github: "https://github.com/yourgithub/project-three",
-    live: "https://yourproject.com",
+    description: "Coming soon...",
+    github: "#",
+    live: "#",
   },
 ];
 

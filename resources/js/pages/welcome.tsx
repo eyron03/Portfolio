@@ -10,13 +10,15 @@ export default function Welcome() {
 
 
     return (
-        <>
+        <div >
             <Navbar />
+        
             <Hero />
             <About />
             <Projects />
-            <Contact/>
+            <Contact />
+
             <Footer />
-        </>
+        </div>
     );
 }
