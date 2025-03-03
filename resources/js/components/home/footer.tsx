@@ -2,8 +2,11 @@ import { Facebook, Twitter, Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-6 mt-auto">
-      <div className="container mx-auto px-6 flex justify-center space-x-6">
+    <footer className="w-full bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-0 mt-auto">
+      {/* Line Divider */}
+      <div className="border-t border-gray-300 dark:border-gray-700 w-full py-2"></div>
+
+      <div className="container mx-auto px-6 flex justify-center space-x-6 mt-4">
         {[
           { icon: <Github />, link: "https://github.com/eyron03" },
           { icon: <Linkedin />, link: "#" },

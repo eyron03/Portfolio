@@ -14,9 +14,9 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-white-100 to-white-300 dark:from-gray-900 dark:to-gray-800 gap-3">
+    <section className="pt-20 flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-white-100 to-white-300 dark:from-gray-900 dark:to-gray-800 gap-4 ">
 
-      {/* Profile Image */}
+
       <motion.img
         src="images/avatar.jpg"
         alt="Profile Avatar"
